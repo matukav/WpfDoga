@@ -28,13 +28,17 @@
                 FontSize="30"
                 MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"/>
             <StackPanel Grid.Row="1">
-                <RadioButton Content="Task 1" Command="{Binding Task1VIewCommand}" IsChecked="True" 
+                <StackPanel x:Name="showPage1">
+                <RadioButton Content="Task 1" IsChecked="True" 
                              Foreground="White" Background="Transparent" Height="50" FontSize="25"
                              VerticalAlignment="Center" Margin="30,5"/>
-                <RadioButton Content="Task 2" Command="{Binding Task2ViewCommand}" 
+                </StackPanel>
+                <StackPanel x:Name="showPage2">
+                <RadioButton Content="Task 2" Command="{Binding Task2View}" 
                              Foreground="White" Background="Transparent" Height="50" FontSize="25"
                              VerticalAlignment="Center" Margin="30,5"/>
-                <RadioButton Content="Task 3" Command="{Binding Task3ViewCommand}" 
+                </StackPanel>
+                <RadioButton Content="Task 3" Command="{Binding Task3View}" 
                              Foreground="White" Background="Transparent" Height="50" FontSize="25"
                              VerticalAlignment="Center" Margin="30,5"/>
                 <RadioButton Content="Close"

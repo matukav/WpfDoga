@@ -35,5 +35,17 @@ namespace WpfDoga
         {
             this.Close();
         }
+
+        private void Task1View_Click(object sender, RoutedEventArgs e)
+        {
+            Tasks.Task1 taskObj = new Tasks.Task1();
+            showPage1.Children.Add(taskObj);
+        }
+
+        private void Task2View_Click(object sender, RoutedEventArgs e)
+        {
+            Tasks.Task2 taskObj = new Tasks.Task2();
+            showPage2.Children.Add(taskObj);
+        }
     }
 }

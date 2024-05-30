@@ -1,0 +1,76 @@
+﻿<UserControl x:Class="WpfDoga.Tasks.Task2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfDoga.Tasks"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="900">
+    <Border Background="Beige" Padding="20,20,20,20" Margin="20">
+        <Grid Margin="0,0,0,-30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="150"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Information 11"
+               FontSize="28"
+               FontWeight="Bold"
+               Padding="0,20"
+               Margin="0,10"
+               Foreground="SaddleBrown"
+               Grid.ColumnSpan="3"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Stretch"
+               TextAlignment="Center"/>
+            <StackPanel Grid.Row="1" Grid.Column="0" VerticalAlignment="Center">
+                <TextBlock Text="Employee ID: "
+                       HorizontalAlignment="Left"
+                       FontSize="22"
+                       Padding="0,10"/>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="0" VerticalAlignment="Center">
+                <TextBlock Text="Position:"
+                       HorizontalAlignment="Left"
+                       FontSize="22"
+                       Padding="0,10"/>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="1" Margin="0,0,10,0">
+                <TextBox FontSize="22"
+                         VerticalAlignment="Stretch"
+                         Width="500"
+                         Height="40"
+                         Margin="18"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">
+                <TextBox HorizontalAlignment="Stretch"
+                     FontSize="18"
+                     Height="200"
+                     Padding="0,10"
+                     Margin="25,0,20,0"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="2" VerticalAlignment="Center">
+                <TextBox HorizontalAlignment="Stretch"
+                         Height="200"
+                         FontSize="18"
+                         Padding="0,10"/>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Height="173" Width="117" Background="SaddleBrown" Content="Save" FontSize="18" Foreground="White" Margin="5,5,5,10"/>
+                <Button Height="173" Width="117" Background="Green" Content="Reset" FontSize="18" Foreground="Black" Margin="5,5,5,10"/>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="2" VerticalAlignment="Center">
+                <CheckBox Content="Send notification"
+                      Foreground="Brown"
+                      FontSize="15"
+                      Width="150"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>
